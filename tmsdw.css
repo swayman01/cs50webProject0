@@ -1,0 +1,35 @@
+h1, h2, h1 + h5 {
+  text-align: center; }
+
+ul {
+  list-style-type: none;
+  padding-left: 0; }
+
+/* TODO Use a variable for margin and colors*/
+section {
+  margin: 0 10% 0 10%; }
+
+@media screen {
+  .speeches, .announcements, .wod, .tabletopics {
+    background-color: #fbf5e6; } }
+@media print {
+  .speeches, .announcements, .wod, .tabletopics {
+    background-color: white; } }
+.bold {
+  font-weight: bold; }
+
+li {
+  margin-bottom: 10px; }
+
+.speechtitle {
+  text-decoration: underline;
+  font-weight: bold;
+  margin-bottom: 0; }
+
+.speechpurpose {
+  text-decoration: underline; }
+
+.navbutton {
+  padding: 0 2% 0 2%; }
+
+/*# sourceMappingURL=tmsdw.css.map */
