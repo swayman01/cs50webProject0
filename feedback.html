@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Feedback</title>
+  <!-- Bootstrap Start -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!--Bootstrap Finish-->
+  <link rel="stylesheet" href="tmsdw.css">
+  <!-- <link rel="stylesheet" href="file:///Users/swayman/Documents/Classes/CS50/CS50%20Web%20Programming/project0/cs50webProject0/tmsdw.css">-->
+  <style >
+  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+<body>
+  <section class="header">
+    <h1>Feedback Form</h1>
+  </section>
+
+  <section class="form">
+    <div class="form-group row">
+      <label class="sr-only" for="speechtitle">Name</label>
+      <input class="col-8 form-control" type="text" id="speechtitle" placeholder= "Speech Title">
+      <label class="sr-only" for="meetingdate">Meeing Date</label>
+      <input class=" col-4 form-control" type="date" id="Meeting Date" placeholder="Meeting Date">
+    </div>
+    <div class="form-group row">
+      <label class="sr-only" for="speakername">Name</label>
+      <input class="col-6 form-control" type="text" id="speakername" placeholder= "Speakers Name">
+      <label class="sr-only" for="speakeremail">Email</label>
+      <input class=" col-6 form-control" type="email" id="speakeremail" placeholder="Speaker's Email">
+    </div>
+    <div class="form-group row">
+      <label class="sr-only" for="myname">Name</label>
+      <input class="col-6 form-control" type="text" id="myname" placeholder= "My Name">
+      <label class="sr-only" for="meetingdate">Meeing Date</label>
+      <input class=" col-6 form-control" type="email" id="myemail" placeholder="My email">
+    </div>
+    <form>
+   <div class="form-group">
+     <label class="sr-only" for="myfeedback">My Feedback:</label>
+     <textarea class="form-control" rows="10" id="comment" placeholder="Enter Feedback Here"></textarea>
+   </div>
+   <button type="submit">Submit</button>
+ </form>
+  </section>
+  <section class="end">
+    <div class="container">
+      <div class= "navbar">
+        <div class="container-fluid">
+          <a href="index.html" class="col-xs-3 navbuttons btn btn-primary active">Home</a>
+          <a href="agenda.html" class="col-xs-3 btn  navbuttons btn-primary active">Agenda</a>
+          <a href="minutes.html" class="col-xs-3 navbuttons btn btn-primary active">Minutes</a>
+          <a href="feedback.html" class="col-xs-3 navbuttons btn btn-primary disabled">Feedback Form</a>
+        </div>
+      </div>
+    </div>
+
+
+  </section>
+
+</body>
+</html>
