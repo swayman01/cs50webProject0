@@ -1,19 +1,78 @@
 $easytoreadcolor: #fbf5e6;
 @media screen {$easytoreadcolor: #fbf5e6;}
 @media print {$easytoreadcolor: white}
-h1,h2,h1+h5 {text-align: center;}
+h1,h2,h1+h5,h6 {text-align: center;}
 ul {list-style-type: none;
   padding-left: 0}
   /* TODO Use a variable for margin and colors*/
   section {margin:0 10% 0 10%}
   @media screen {
-  .speeches, .announcements, .wod, .tabletopics {background-color: $easytoreadcolor;}}
+    .speech, .announcements, .wod, .tabletopics, .evaluations {background-color: $easytoreadcolor;}
+  }
   @media print {
-  .speeches, .announcements, .wod, .tabletopics {background-color: white;}}
-  .bold {font-weight: bold;}
-  li{margin-bottom:10px}
-  .speechtitle {text-decoration: underline;
+    .speech, .announcements, .wod, .tabletopics, .evaluations {background-color: white;}
+  }
+  #roles {
+    width: 50%;
+    margin: 0px auto;
+    float: none;
+    font-size: .9em;
+  }
+  #officers{
+    @extend #roles;
+    font-size: .8em;
+  }
+  #generalevlauator {
+    width: 50%;
+    margin: 0px auto;
+    float: none;
+  }
+  .square {
+    float: left;
+    position: relative;
+    width: 33%;
+    overflow: hidden;
+  }
+  .rectangle {
+    float: left;
+    position: relative;
+    width: 33%;
+    overflow: hidden;
+  }
+  .speechheadline {
     font-weight: bold;
-    margin-bottom: 0;}
-  .speechpurpose{text-decoration: underline;}
-  .navbutton {padding:0 2% 0 2%}
+    margin-bottom: 0;
+    margin-top: 2%;
+    .speakername{
+      text-decoration: underline;
+    }
+    .speechtitle {
+      text-decoration: none;
+    }
+    .speechtype{
+
+    }
+  }
+  .speechpurpose {
+    font-style: italic;
+  }
+  .speechcontent {
+  }
+  span.speechtitle::before {
+    content: open-quote;
+  }
+  span.speechtitle::after {
+    content: close-quote;
+  }
+  .bold {font-weight: bold;}
+  li {margin-bottom:10px;}
+  .speechpurpose {}
+  .navbuttons {
+    padding:10px;
+    margin:2%;}
+    .navbar{
+      width: 100%;
+      text-align: center;
+    }
+
+    .TODO {color:red}

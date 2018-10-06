@@ -1,4 +1,4 @@
-h1, h2, h1 + h5 {
+h1, h2, h1 + h5, h6 {
   text-align: center; }
 
 ul {
@@ -10,26 +10,70 @@ section {
   margin: 0 10% 0 10%; }
 
 @media screen {
-  .speeches, .announcements, .wod, .tabletopics {
+  .speech, .announcements, .wod, .tabletopics, .evaluations {
     background-color: #fbf5e6; } }
 @media print {
-  .speeches, .announcements, .wod, .tabletopics {
+  .speech, .announcements, .wod, .tabletopics, .evaluations {
     background-color: white; } }
+#roles, #officers {
+  width: 50%;
+  margin: 0px auto;
+  float: none;
+  font-size: .9em; }
+
+#officers {
+  font-size: .8em; }
+
+#generalevlauator {
+  width: 50%;
+  margin: 0px auto;
+  float: none; }
+
+.square {
+  float: left;
+  position: relative;
+  width: 33%;
+  overflow: hidden; }
+
+.rectangle {
+  float: left;
+  position: relative;
+  width: 33%;
+  overflow: hidden; }
+
+.speechheadline {
+  font-weight: bold;
+  margin-bottom: 0;
+  margin-top: 2%; }
+  .speechheadline .speakername {
+    text-decoration: underline; }
+  .speechheadline .speechtitle {
+    text-decoration: none; }
+
+.speechpurpose {
+  font-style: italic; }
+
+span.speechtitle::before {
+  content: open-quote; }
+
+span.speechtitle::after {
+  content: close-quote; }
+
 .bold {
   font-weight: bold; }
 
 li {
   margin-bottom: 10px; }
 
-.speechtitle {
-  text-decoration: underline;
-  font-weight: bold;
-  margin-bottom: 0; }
+.navbuttons {
+  padding: 10px;
+  margin: 2%; }
 
-.speechpurpose {
-  text-decoration: underline; }
+.navbar {
+  width: 100%;
+  text-align: center; }
 
-.navbutton {
-  padding: 0 2% 0 2%; }
+.TODO {
+  color: red; }
 
 /*# sourceMappingURL=tmsdw.css.map */
